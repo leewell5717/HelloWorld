@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="java.util.List"/>
+        <import type="java.util.Map"/>
+        <variable
+            name="key"
+            type="String"/>
+        <variable
+            name="pos"
+            type="int"/>
+        <variable
+            name="list"
+            type="List"/>
+        <variable
+            name="map"
+            type="Map"/>
+
+        <import type="com.liwei.mystudy.EventHelper"/>
+        <variable
+            name="myClick"
+            type="EventHelper"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data class="Bind">
+        <import type="java.util.HashMap"/>
+        <import type="java.util.List"/>
+
+        <variable
+            name="user"
+            type="com.liwei.databinding.MyUser"/>
+        <variable
+            name="size"
+            type="int"/>
+        <variable
+            name="hadlers"
+            type="com.liwei.databinding.EventHandler"/>
+        <variable
+            name="map"
+            type="HashMap&lt;String,String&gt;"/>
+        <variable
+            name="list"
+            type="List"/>
+
+        <variable
+            name="people"
+            type="com.liwei.databinding.People"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@{size}"
+            android:text="@{map[`a`]}"
+            android:onClick="@{(view)->hadlers.myClick()}" />
+        <!--android:onClick="@{(view)->hadlers.myClick(view,&quot;静静&quot;)}"-->
+        <EditText
+            android:id="@+id/ed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@{size}"
+            android:text="@={user.name}"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@{size}"
+            android:text="@{user.name}"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@{size}"
+            android:text="@{`姓名：`+people.name+`，年龄：`+people.age+`，体重：`+people.weight}"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/recycler" />
+
+    </LinearLayout>
+</layout>
+

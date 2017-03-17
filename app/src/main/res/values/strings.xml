@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyStudy</string>
+    <string name="title_activity_data_bind">DataBind</string>
+    <string name="title_activity_blue_tooth">BlueToothActivity</string>
+    <string name="title_activity_blue_tooth_server">BlueToothServerActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+</resources>
