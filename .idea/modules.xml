@@ -5,8 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyGit.iml" filepath="$PROJECT_DIR$/MyGit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libgreendaogenerator/libgreendaogenerator.iml" filepath="$PROJECT_DIR$/libgreendaogenerator/libgreendaogenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/libgreendaogenerator/libgreendaogenerator.iml" filepath="$PROJECT_DIR$/libgreendaogenerator/libgreendaogenerator.iml" />
     </modules>
   </component>
